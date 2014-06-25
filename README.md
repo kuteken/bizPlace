@@ -8,6 +8,8 @@
 * 近くのお店から電話がかかってくる
 * 電話を切ったら、SMSでお店への地図が送られて来ている
 
+![2up](https://cloud.githubusercontent.com/assets/1069988/3382991/7c0eda0c-fc43-11e3-96f5-36b384927955.jpg)
+
 ## 設定ファイル
 
 * `/config` 以下にAPIキー, 電話番号を設定する
