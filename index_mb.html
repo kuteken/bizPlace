@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<body bgcolor="#eaeaea">
+<div align="center">
+
+  <img src="images/mb/logo.gif"><br />
+  <form action="/twilio/call_shop.php">
+    <div style="background:#999999;"><img src="images/mb/line.gif" alt="" height="1" /></div>
+      TEL<br />
+      <input type="number" name="tel" size="22" /><br />
+    <div style="background:#999999;"><img src="images/mb/line.gif" alt="" height="1" /></div>
+
+    <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><img src="images/mb/smoking.gif"></td>
+      <td><font size="x-small"><input type="checkbox" name="smoking[]" value="yes" checked />喫煙</font></td>
+      <td><font size="x-small"><input type="checkbox" name="smoking[]" value="no" checked />禁煙</font></td>
+    </tr>
+    <tr>
+      <td><img src="images/mb/power.gif"></td>
+      <td><font size="x-small"><input type="checkbox" name="power[]" value="yes" checked />あり</font></td>
+      <td><font size="x-small"><input type="checkbox" name="power[]" value="no" checked />なし</font></td>
+    </tr>
+    <tr>
+      <td><img src="images/mb/wifi.gif"></td>
+      <td><font size="x-small"><input type="checkbox" name="wifi[]" value="yes" checked />あり</font></td>
+      <td><font size="x-small"><input type="checkbox" name="wifi[]" value="no" checked />なし</font></td>
+    </tr>
+    <tr>
+      <td><img src="images/mb/time.gif"></td>
+      <td colspan="2">
+      <select name="time">
+        <option selected value="10">徒歩10分以内</option>
+        <option value="15">徒歩15分以内</option>
+        <option value="20">徒歩20分以内</option>
+        <option value="30">徒歩30分以内</option>
+      </select>
+      </td>
+    </tr>
+    </table>
+
+    <button type="submit">
+    <img src="images/mb/submit_btn.gif">
+    </button>
+    
+  </form>
+</div>
+</body>
+
+

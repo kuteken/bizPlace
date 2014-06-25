@@ -1,0 +1,7 @@
+<Files *_mb.html>
+AddType "text/html; charset=Shift_JIS" .html
+</Files>
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^(DoCoMo|KDDI|DDIPOKET|UP\.Browser|J-PHONE|Vodafone|SoftBank)
+RewriteRule ^$ /index_mb.html [R,L]

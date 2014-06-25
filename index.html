@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIZ PLACE -ビズプレイス-</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+</head>
+<body>
+<h1><img src="images/main.jpg" alt="ビズプレイス"></h1>
+
+<p class="howto"><span>?</span>使い方</p>
+<div style="display: none;">
+  <p>1.ビズプレイスが近くのお店からあなたに最適なお席を探します。</p>
+  <p>2.数分でお店からお席のご案内のお電話があります。</p>
+  <p>3.お電話が終わると地図がメールされています。</p>
+  <p>4.お店に向かいましょう。</p>
+</div>
+
+<form action="/twilio/call_shop.php">
+  <p><input type="tel" name="tel" placeholder="電話番号を入力" class="tel_input"><br>
+  <small>※電話番号は店舗からのお電話と地図の送信のみに使用します</small></p>
+  <ul class="options smoking">
+    <li>  
+      <input type="checkbox" id="option1_1" name="smoking[]" value="yes" checked>
+      <label class="checkbox" for="option1_1">喫煙</label>
+    </li>
+    <li>
+      <input type="checkbox" id="option1_2" name="smoking[]" value="no" checked>
+      <label class="checkbox" for="option1_2">禁煙</label>
+    </li>
+  </ul>
+  <ul class="options wifi">
+    <li>  
+      <input type="checkbox" id="option2_1" name="wifi[]" value="yes" checked>
+      <label class="checkbox" for="option2_1">あり</label>
+    </li>
+    <li>
+      <input type="checkbox" id="option2_2" name="wifi[]" value="no" checked>
+      <label class="checkbox" for="option2_2">なし</label>
+    </li>
+  </ul>
+  <ul class="options power">
+    <li>  
+      <input type="checkbox" id="option3_1" name="power[]" value="yes" checked>
+      <label class="checkbox" for="option3_1">あり</label>
+    </li>
+    <li>
+      <input type="checkbox" id="option3_2" name="power[]" value="no" checked>
+      <label class="checkbox" for="option3_2">なし</label>
+    </li>
+  </ul>
+  
+  <p class="time_range">
+    <input type="range" name="time" min="0" max="30" value="10" step="5" onchange="rangevalue.value=value"><br>
+    徒歩<output id="rangevalue">10</output>分以内
+  </p>
+  <p><input type="submit" value="問い合わせ" class="btn"></p>
+
+</form>
+</body>
+</html>
